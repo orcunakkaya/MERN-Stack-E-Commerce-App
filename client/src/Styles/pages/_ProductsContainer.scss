@@ -1,0 +1,27 @@
+.products-container {
+    display: flex;
+    column-gap: 6rem;
+    padding: 3rem 4rem;
+}
+
+@media screen and(max-width: 1200px){
+    .products-container{
+        column-gap: 3rem;
+        padding: 3rem 2.5rem;
+    }
+}
+
+@media screen and(max-width: 950px){
+    .products-container{
+        column-gap: 3rem;
+        padding: 3rem 1.5rem;
+    }
+}
+
+@media screen and(max-width: 800px){
+    .products-container{
+        flex-direction: column;
+        row-gap: 2rem;
+        padding: 3rem 1.5rem;
+    }
+}

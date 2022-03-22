@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5951f90c.css",
+    "main.js": "/static/js/main.672185f0.js",
+    "static/media/iphone-13-pro.jfif": "/static/media/iphone-13-pro.c55ff745b84be2cd3ec4.jfif",
+    "static/media/mb-pro.jfif": "/static/media/mb-pro.195794ff19f194baf32f.jfif",
+    "static/media/watches.jpg": "/static/media/watches.8b4d3a9a9703b977e47e.jpg",
+    "static/media/ipad-pro.jfif": "/static/media/ipad-pro.3e4b09ddb3a8a4310422.jfif",
+    "static/media/imac.jpg": "/static/media/imac.be3af879be3ce9061e6f.jpg",
+    "static/media/iphone12pro.jpg": "/static/media/iphone12pro.42b60c649f8a34825a96.jpg",
+    "static/media/aksesuar.jfif": "/static/media/aksesuar.ca98fadcbc5682f2cd95.jfif",
+    "static/media/iMac.svg": "/static/media/iMac.191c99cb45fe1c79a182a93445871391.svg",
+    "static/media/iPhone.svg": "/static/media/iPhone.ed6325fad7f1c8555a948babd8957e47.svg",
+    "static/media/Aksesuarlar.svg": "/static/media/Aksesuarlar.630266461ebea7c13f05f4ed74394d3a.svg",
+    "index.html": "/index.html",
+    "static/media/iPad.svg": "/static/media/iPad.84148dcdd40d14b6b018e3f3f6acbe2b.svg",
+    "static/media/AppleWatch.svg": "/static/media/AppleWatch.45d69173827cf66a694926ec688dfb43.svg",
+    "static/media/MacBookPro.svg": "/static/media/MacBookPro.ecb7d4650dc16726a95e864c3f410148.svg",
+    "main.5951f90c.css.map": "/static/css/main.5951f90c.css.map",
+    "main.672185f0.js.map": "/static/js/main.672185f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5951f90c.css",
+    "static/js/main.672185f0.js"
+  ]
+}
