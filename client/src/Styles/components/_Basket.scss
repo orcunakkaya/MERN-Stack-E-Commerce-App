@@ -1,0 +1,230 @@
+.basket{
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    &__header{
+        text-align: center;
+    }
+}
+
+.basket__items{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 40%;
+    min-width: fit-content;
+}
+
+.basket__container{
+    display: flex;
+    column-gap: 1rem;
+    padding-right: 1.4rem;
+    // width: 54rem;
+    outline: var(--box-border-color);
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+}
+
+.basket__item-description{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.basket__image{
+    img{
+        width: 7.6rem;
+    }
+}
+
+.basket__item-title{
+    font-size: var(--normal-font-size);
+    margin-top: .85rem;
+    &:hover{
+        color: orange;
+    }
+}
+
+.basket__item-price{
+    font-size: var(--biggest-font-size);
+    align-self: center;
+}
+
+.delete__basket-item{
+    position: absolute;
+    right: 1.8%;
+    top: 6%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    i{
+        font-size: 1.2rem;
+    }
+    &:hover{
+        i{
+            color: rgb(238, 52, 52);
+        }
+    }
+}
+
+.basket__total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    column-gap: 2rem;
+}
+
+.basket__total-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .85rem;
+    h4{
+        padding: 0;
+        margin: 0;
+    }
+    .total-price{
+        color: var(--green-color);
+        font-size: var(--big-font-size);
+    }
+}
+.basket__item-price{
+    color: var(--green-color);
+}
+
+.basket__buttons{
+    display: flex;
+    column-gap: 2rem;
+
+    button{
+        outline: none;
+        border: var(--box-border-color);
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 6px 12px;
+
+        &:nth-child(1){
+            color: var(--green-color);
+            &:hover{
+                background-color: var(--green-color);
+                color: #fff;
+            }
+        }
+        &:nth-child(2){
+            color: red;
+            &:hover{
+                background-color: red;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.empty-basket{
+    color: orange;
+    font-size: var(--normal-font-size);
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.buy__modal{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    &-box{
+        position: relative;
+        width: 350px;
+        height: 220px;
+        background-color: #fff;
+        z-index: 9999;
+        top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    &-header{
+        text-align: center;
+        font-size: var(--normal-font-size);
+        color: var(--black-color);
+    }
+    &-price{
+        text-align: center;
+        margin-top: 2.5rem;
+        font-size: var(--m-font-size);
+        span{
+            color: var(--green-color);
+        }
+    }
+    &-buttons{
+
+        button{
+            border: var(--box-border-color);
+            padding: 5px 12px;
+            border-radius: 4px;
+            color: var(--white-color);
+            
+            &:nth-child(1){
+                position: absolute;
+                bottom: 5%;
+                left: 4%;
+                background-color: var(--green-color);
+            }
+            &:nth-child(2){
+                position: absolute;
+                bottom: 5%;
+                right: 4%;
+                background-color: red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .basket{
+        padding: 1rem 1.2rem;
+    }
+    .basket__image{
+        img{
+            width: 5.6rem;
+        }
+    }
+    .basket__item-price{
+        font-size: var(--normal-font-size);
+    }
+
+    .basket__item-title{
+        font-size: var(--small-font-size);
+    }
+
+    .basket__total{
+        column-gap: 1rem;
+        margin-top: 1.25rem;
+        flex-wrap: wrap;
+    }
+    .basket__total-container{
+        h4{
+            font-size: var(--normal-font-size);
+        }
+        .total-price{
+            font-size: var(--normal-font-size);
+        }
+    }
+    .basket__buttons{
+        column-gap: 1.25rem;
+    }
+
+    .buy__modal-box{
+        width: 90%;
+    }
+}
